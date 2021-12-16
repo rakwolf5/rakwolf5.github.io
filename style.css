@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600&display=swap');
+
+*{
+  font-family: 'Baloo Paaji 2', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  background: #e6e6e6;
+}
+
+.top_navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #323233;
+  box-shadow: 1px 0 2px rgba(0,0,0,0.125);
+  display: flex;
+  align-items: center;
+}
+
+.top_navbar .logo{
+  width: 210px;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 0 25px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-right: 1px solid #f5f5f5;
+}
+
+.top_navbar .menu{
+  width: calc(100% - 250px);
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hover_collapse .sidebar{
+  width: 70px;
+  transition: width .2s;
+}
+
+.hover_collapse .sidebar ul li a .text{
+  display: none;
+}
+
+.sidebar{
+  position: fixed;
+  overflow: hidden;
+  top: 60px;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background: #042331;
+  display: flex;
+}
+
+.sidebar ul li a{
+  display: block;
+  padding: 16px 25px;
+  color: #0e94d4;
+  cursor: pointer;
+}
+
+.sidebar ul li a .icon{
+  font-size: 18px;
+  color: white;
+  vertical-align: middle;
+}
+
+.sidebar ul li a .text{
+  white-space: nowrap;
+  margin-left: 10px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.sidebar ul li a:hover{
+  background: #0e94d4;
+  color: #fff;
+}
+
+.click_collapse .sidebar{
+
+}
+
+.button{
+  cursor: pointer;
+  outline: 0;
+  color: #fff;
+  background-color: #0e94d4;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid #042331;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.button:hover{
+  color: #fff;
+  background-color: #042331;
+}
+
+.content{
+  text-align: center;
+  font-size: 200%;
+  padding: 10px;
+}
+
+.user{
+  white-space: nowrap;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+th, td{
+  padding-right: 20px;
+  text-align: left;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login{
+  display: inline-block;
+  margin: 5px;
+}
